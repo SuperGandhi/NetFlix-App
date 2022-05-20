@@ -10,7 +10,7 @@ const Home = () => {
         <Row title='Up Coming' fetchURL={request.requestUpcoming}/>
         <Row title='Popular' fetchURL={request.requestPopular}/>
         <Row title='Trending' fetchURL={request.requestTrending}/>
-        <Row title='Top Rated' fetchURL={request.requestTopRated}/>
+        <Row title='Top Rated' fetchURL={request.requestTopRanted}/>
         <Row title='Horror' fetchURL={request.requestHorror}/>
     </div>
   )
