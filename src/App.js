@@ -2,15 +2,18 @@ import {Routes, Route} from 'react-router-dom'
 import React from 'react'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
+import { AuthContextProvider } from './context/AuthContext'
 
 
 const App = () => {
   return (
     <>
-      <Navbar/>
-      <Routes>
+      <AuthContextProvider>
+        <Navbar/>
+        <Routes>
         <Route path="/" element={<Home/>}/>
-      </Routes>
+        </Routes>
+      </AuthContextProvider>
     </>
   )
 }
